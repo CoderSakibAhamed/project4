@@ -1,0 +1,200 @@
+* {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    height: 100%; width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+    height: 59.48vh;
+    width: 530px;
+    box-sizing: border-box;
+    margin-top: 132px;
+    border-radius: 8px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    box-shadow: 0 0 20px -7px rgba(0, 0, 0, 0.3);
+}
+
+.first-section {
+    height: 45%; width: 100%;
+    box-sizing: border-box;    
+}
+
+.header {
+    padding-left: 30px;
+    padding-right: 60px;
+
+    margin-top: 25px;
+}
+
+.proposal {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    font-size: .75em;
+}
+
+.money-back {
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.text {
+    color: hsl(218, 22%, 67%);
+    font-size: 14px;
+}
+
+
+.second-section {
+    height: 55%; width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.left-box {
+    background-color: hsl(179, 62%, 43%);
+    background-size: cover;
+    opacity: .95;
+    color: white;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-top: 20px;
+    border-radius: 0 0 0 8px;
+
+    width: 50%;
+    height: 100%;
+}
+
+.left-box h4 {
+    font-size: 1em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.left-box .price {
+    font-size: 1.6em;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.price span {
+    font-weight: 400;
+    font-size: .55em;
+    color: rgb(114, 238, 238);
+    padding-left: 10px;
+}
+
+.left-box .full-access {
+    font-size: .85em;
+    margin-top: 0;
+}
+
+.left-box button {
+    padding: 5% 35%;
+    border: none;
+    outline: none;
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 5px;
+    margin-top: 15px;
+    box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.2);
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+    font-size: .8em;
+}
+
+.right-box {
+    background-color: hsl(179, 62%, 43%);
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    opacity: .8;
+    padding-left: 30px;
+    padding-top: 20px;
+    border-radius: 0 0 8px 0;
+}
+
+.right-box h4 {
+    font-weight: 700;
+    font-size: 1em;
+    color: white;
+}
+
+.right-box p {
+    font-weight: 200;
+    font-size: .7em;
+    color: hsl(204, 27%, 89%);
+    padding: 0;
+    line-height: .5;
+    letter-spacing: .5px;
+}
+
+
+
+
+
+
+
+
+
+/***************************    Media Qureries ***********************/
+@media only screen and (max-width:375px) {
+
+    .container {
+        height: auto;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .first-section {
+        height: 45%;
+        width: 80%;
+    }
+    
+    .second-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 55%;
+        width: 100%;
+    }
+
+    .second-section .left-box {
+        width: 100%;
+        height: 50%;
+        border-radius: 0;
+        
+    }
+
+    .left-box button {
+        margin-bottom: 20px;
+    }
+    
+    .second-section .right-box {
+        width: 100%;
+        height: 50%;
+        border-radius: 0 0 8px 8px;
+    } 
+}
